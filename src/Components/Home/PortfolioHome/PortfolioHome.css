@@ -1,0 +1,26 @@
+.portfolio_home_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio_home_box .card {
+  width: 45%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.486);
+  transform: scaleX(0);
+  transition: linear all 0.5s;
+}
+.card:hover .card-img-overlay {
+  transform: scaleX(1);
+  transition: linear all 0.5s;
+}
+@media (min-width: 422px) and (max-width: 991.98px) {
+  .card-img-overlay p {
+    display: none;
+  }
+  .card:hover .card-img-overlay {
+    font-size: 9px;
+  }
+}

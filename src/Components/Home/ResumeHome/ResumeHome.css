@@ -1,0 +1,11 @@
+.skill_box {
+  width: 45%;
+  margin-right: 15px;
+  padding: 10px;
+}
+.skill_box_all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

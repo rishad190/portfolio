@@ -1,0 +1,15 @@
+.header_text_box {
+  padding-top: 80px;
+  padding-bottom: 39px;
+  font-family: "Lobster, cursive";
+  font-size: 80px;
+}
+@media (min-width: 422px) and (max-width: 991.98px) {
+  .header_text_box {
+    padding-top: 10px;
+    padding-bottom: 39px;
+    margin-bottom: 50px;
+    font-family: "Lobster, cursive";
+    font-size: 50px;
+  }
+}
