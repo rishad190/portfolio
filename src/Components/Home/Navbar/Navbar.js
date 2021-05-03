@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             RISHAD
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,32 +23,37 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/portfolio">
+                <Link className="nav-link" to="/portfolio">
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/blog">
+                <Link className="nav-link" to="/blog">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/resume">
+                <Link className="nav-link" to="/resume">
                   Resume
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
+                <Link className="nav-link" to="/contact">
                   Contact Me
-                </a>
+                </Link>
               </li>
             </ul>
-            <a href="./cv.pdf" className="btn btn-outline-success" download>
+            <a
+              href="https://drive.google.com/file/d/124GmvYp9OnX3W3BMUzcvutUQTg3rej62/view?usp=sharing"
+              target="_bank"
+              className="btn btn-outline-success"
+              download
+            >
               Download CV
             </a>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProgressLine from "../../Design/ProgressLine";
 import "./ResumeHome.css";
 
@@ -142,9 +143,9 @@ const ResumeHome = () => {
           </div>
         </div>
         <div className="row">
-          <a href="/resume" className="btn btn-outline-light">
+          <Link to="/resume" className="btn btn-outline-light">
             See More
-          </a>
+          </Link>
         </div>
       </div>
     </section>

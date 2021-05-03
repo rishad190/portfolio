@@ -4,10 +4,10 @@ import Typical from "react-typical";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="container" style={{ marginTop: "125px" }}>
+    <div className="container-fluid" style={{ marginTop: "125px" }}>
       <div className="row">
-        <div className="col-md-6">
-          <h1 className="text-white header_text_box">
+        <div className="col-md-7 ">
+          <h1 className="text-white header_text_box ">
             Hi <br />
             I'm Rishad{" "}
             <span style={{ color: "#3498db" }}>
@@ -19,10 +19,10 @@ const Header = () => {
             </span>
           </h1>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-5">
           <img
             className="image-fluid w-100"
-            style={{ marginLeft: "200px" }}
+            style={{ marginLeft: "100px" }}
             src={profile}
             alt=""
           />

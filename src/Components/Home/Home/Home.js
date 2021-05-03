@@ -1,6 +1,8 @@
 import React from "react";
 import Particles from "react-particles-js";
 
+import Fade from "react-reveal/Fade";
+
 import ParticalConfig from "../../Design/ParticalConfig";
 import AboutHome from "../AboutHome/AboutHome";
 import BlogHome from "../BlogHome/BlogHome";
@@ -13,23 +15,28 @@ const Home = () => {
   return (
     <div>
       <div className="bg-dark">
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative", height: "940px" }}>
           <div
             style={{
               position: "absolute",
-              width: "100vw",
-              height: "100vh",
+              // width: "100vw",
+              // height: "100vh",
+              left: "7%",
             }}
           >
-            <Particles params={ParticalConfig} />
-          </div>
-          <div style={{ paddingTop: "50px" }}>
             <Header></Header>
+          </div>
+          <div>
+            <Particles params={ParticalConfig} />
           </div>
         </div>
       </div>
-      <PortfolioHome></PortfolioHome>
-      <ResumeHome></ResumeHome>
+      <Fade left>
+        <PortfolioHome></PortfolioHome>
+      </Fade>
+      <Fade right>
+        <ResumeHome></ResumeHome>
+      </Fade>
       <BlogHome></BlogHome>
       <AboutHome></AboutHome>
     </div>
