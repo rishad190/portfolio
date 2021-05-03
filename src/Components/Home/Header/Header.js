@@ -12,7 +12,14 @@ const Header = () => {
             I'm Rishad{" "}
             <span style={{ color: "#3498db" }}>
               <Typical
-                steps={["Web Developer", 1000, "Frontend Developer", 1000]}
+                steps={[
+                  "Web Developer",
+                  1000,
+                  "Frontend Developer",
+                  1000,
+                  "Electrical Engineer",
+                  600,
+                ]}
                 loop={Infinity}
                 wrapper="p"
               />
